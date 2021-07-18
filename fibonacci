@@ -1,0 +1,19 @@
+seq_number=int(input("Enter a number till where you want your fibonacci series"))
+n1=0
+n2=1
+count=2
+if seq_number<=0:
+  print(" Please enter a positive integer ")
+elif seq_number == 1:
+  print("Fibonacci seq")
+  print(n1)
+else:
+  print("Fibonacci seq :")
+  print(n1 , "," ,end =" ,")
+  while count<seq_number:
+    nth =n1+n2
+    print(nth , end= ",")
+    
+    n1=n2
+    n2=nth
+    count=count+1
